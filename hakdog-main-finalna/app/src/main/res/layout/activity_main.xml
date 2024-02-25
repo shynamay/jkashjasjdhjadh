@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imageview1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/image1_description"
+        android:scaleType="fitXY"
+        android:src="@drawable/s1"
+        tools:layout_editor_absoluteX="-118dp"
+        tools:layout_editor_absoluteY="-140dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton1"
+        android:layout_width="83dp"
+        android:layout_height="36dp"
+        android:layout_above="@+id/imageButton2"
+        android:background="#00FFFFFF"
+        android:contentDescription="@string/button1_description"
+        android:scaleType="centerCrop"
+        android:src="@drawable/button1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.063"
+        app:layout_constraintStart_toStartOf="@+id/imageview1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.865" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="104dp"
+        android:layout_height="38dp"
+        android:layout_marginBottom="16dp"
+        android:background="#00FFFFFF"
+        android:contentDescription="@string/button2_description"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton1"
+        app:srcCompat="@drawable/button2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
